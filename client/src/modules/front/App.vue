@@ -49,7 +49,7 @@
     .wrap:after
         content ""
         display block
-        height $footer-height
+        height $footer-height + 50px
 
     .footer
         height $footer-height
@@ -57,6 +57,7 @@
         color $grey
         text-align center
         line-height 20px
+        font-size: 12px
         a
             text-decoration none
             color $blue-link
