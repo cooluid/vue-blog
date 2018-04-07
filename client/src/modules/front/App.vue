@@ -45,6 +45,8 @@
     .wrap
         min-height 100%
         margin-bottom -($footer-height)
+        background-color: #f6f6f6
+        margin-top: -25px
 
     .wrap:after
         content ""
