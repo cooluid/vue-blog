@@ -20,9 +20,9 @@
                         <div class="list__article__item__abstract markdown-body"
                              v-html="compiledMarkdown(article.abstract)"></div>
                         <span class="list__article__tag" v-for="tag in article.tags"> {{tag.name}}</span>
-                        <!--<p>-->
-                        <!--<router-link :to="'/article/'+article.id" class="continue-reading">More...</router-link>-->
-                        <!--</p>-->
+                        <div class="continue-reading">
+                            <router-link :to="'/article/'+article.id" class="continue-reading">阅读全文 »</router-link>
+                        </div>
                     </div>
                 </li>
                 <Pagination :curPage='curPage' :allPage='allPage' @changePage='changePage'></Pagination>
@@ -133,7 +133,7 @@
         padding-top 85px
         &__article
             list-style none
-            margin-left 260px
+            margin-left 150px
         &__article__item
             margin 0 auto
             padding 15px 10px 10px 15px
@@ -156,9 +156,9 @@
         &__article__item__abstract
             margin-bottom 5px
         .continue-reading
-            text-decoration none
-            color #0366d6
-            margin-right: 5px
+            color: #175199
+            text-align: right
+            text-decoration: none
         &__article__tag
             color: #ffffff
             margin: 5px

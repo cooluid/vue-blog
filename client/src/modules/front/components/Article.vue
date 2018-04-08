@@ -7,6 +7,7 @@
         <div class="article__main" v-if="!isLoading">
             <h1 class="article__title">{{currentPost.title}}</h1>
             <p class="article__time">{{currentPost.createTime}}</p>
+            <div class="article__line"></div>
             <div class="article__content markdown-body" v-html="currentPostCompile" ref="post">
             </div>
         </div>
@@ -26,7 +27,6 @@
 
     export default {
         name: 'article',
-        computed: {},
         data() {
             return {
                 category: [],
@@ -107,16 +107,27 @@
         margin 85px auto 0 auto
         padding 10px 20px 0px 20px
         &__main
-            margin-left 260px
-            margin-top: 50px
             min-height 100%
+            background-color: #ffffff
+            margin-left: 150px
+            margin-right: -100px
+            padding: 25px
+            box-shadow: 1px 1px 1px hsl(0, 0%, 80%)
         &__title
             font-size 24px
             word-break break-all
+            color: #005cc5
         &__time
             color #7f8c8d
             font-weight 400
             margin-bottom 10px
+        &__column
+            color #7f8c8d
+        &__line
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 10px
+
         &__loading
             position fixed
             top 50%

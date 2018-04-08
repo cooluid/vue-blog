@@ -130,6 +130,7 @@ export default {
     width 250px
     float left
     text-align center
+    margin-left :-130px
     &__img
       width 150px
       border-radius 50%
