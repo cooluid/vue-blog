@@ -110,7 +110,6 @@
             min-height 100%
             background-color: #ffffff
             margin-left: 150px
-            margin-right: -100px
             padding: 25px
             box-shadow: 1px 1px 1px hsl(0, 0%, 80%)
         &__title

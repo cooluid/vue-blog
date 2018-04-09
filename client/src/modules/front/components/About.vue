@@ -4,7 +4,7 @@
         <div class="content">
             <p>一名小游戏前端，从事游戏6年多，有开发出过亿的游戏，也有一塌糊涂的产品，混迹于页游、手游、H5游戏间，目前从事H5游戏开发。</p>
             <p>博客采用vue <a href="https://github.com/BUPT-HJM/vue-blog" target="_blank">BUPT-HJM</a>
-                进行修改，其实主要是学习vue的过程。网站并没有有用的内容。有正在学习、摸索中的道友可加微信 cooluid 聊聊人生，互相探讨交流</p>
+                进行修改，其实主要是学习vue的过程，网站并没有有实用性内容。有正在学习、摸索中的道友可加微信 cooluid 聊聊人生，互相探讨交流</p>
         </div>
     </div>
 </template>
@@ -36,7 +36,7 @@
             background-color: #ffffff
             border-radius: 1px
             box-shadow: 1px 1px 1px hsl(0, 0%, 80%)
-            line-height: 50px
+            line-height: 30px
             font-family Monaco
 
 </style>
