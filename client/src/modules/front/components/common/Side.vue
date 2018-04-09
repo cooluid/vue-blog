@@ -15,7 +15,7 @@
           <span>{{tag.name}}</span>
         </li>
       </ul>
-      <div class="categoryBox" v-if="!isInList" :class="{ 'categoryBox--fixed': (scrollTop > 270)}" ref="categoryBox">
+      <div class="categoryBox" v-if="!isInList && category.length" :class="{ 'categoryBox--fixed': (scrollTop > 270)}" ref="categoryBox">
         <p class="categoryBox__title">文章目录</p>
         <ul class="categoryBox__list">
           <li v-for="item in category" :class="'categoryBox__'+item.tagName">

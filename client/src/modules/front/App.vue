@@ -11,7 +11,7 @@
             </transition>
         </div>
         <footer class="footer">
-            <p>Copyright © <a href='http://xxxx.cool'>夕阳醉了</a>&nbsp;&nbsp;2018 by cool-blog</p>
+            <p>Copyright © <a href='http://xxxx.cool'>夕阳醉了</a></p>
             <p>粤ICP备16046513号</p>
         </footer>
     </div>

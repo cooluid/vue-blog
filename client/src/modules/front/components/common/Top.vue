@@ -3,6 +3,10 @@
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAACYktHRAD/h4/MvwAAAAlwSFlzAAALEwAACxMBAJqcGAAAADlJREFUWMPt08ERACAIBDEomvqxBh18EQogn9us+HsJAAAAt0BPfQU8A2YKULKSdQAQmpIBAMBm4AAtdCIhmRB8RAAAAABJRU5ErkJggg=="
              alt="" class="top-header__menu-button" @click.stop="toggleSideBox">
         <router-link to="/" class="top-header__main-icon" @click.native='clearFilter'>夕阳醉了's Blog</router-link>
+        <div class="top-header__navigation">
+            <router-link to="/" @click.native='clearFilter' class="nav">首页</router-link>
+            <router-link to="/about" class="nav">关于</router-link>
+        </div>
     </header>
 </template>
 <script>
@@ -59,6 +63,20 @@
             height 32px
             margin-top -(@height/ 2)
             display none
+        &__navigation
+            position absolute
+            top 10%
+            left: 350px
+            .nav
+                color: $blue
+                margin: 10px
+                text-decoration: none
+                font-weight: 700
+                &:hover
+                    color #b3d4fc
+                &.router-link-active
+                .nav
+                    color: #000f96
 
     @media screen and (max-width: 850px)
         .top-header
@@ -66,4 +84,6 @@
             padding 0
             &__menu-button
                 display block
+            &__navigation
+                display: none
 </style>
